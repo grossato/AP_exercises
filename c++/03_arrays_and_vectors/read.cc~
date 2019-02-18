@@ -1,0 +1,16 @@
+#include <iostream>
+
+int main(){
+  std::string word;
+  std::vector<std::string> vow;
+  for(int i=0,i<10;i++){
+    std::cin >> word
+      vow.push_back(word)
+  }
+  std::sort( vow.begin(), vow.end() );
+  for(int i=0,i<10;i++){
+    if( i==0) std::cout<< vow[0];
+    if(i!=0 && vow[i]!vow[i-1]) std::cout <<vow[i]<<"\n"; 
+     
+  }
+}
